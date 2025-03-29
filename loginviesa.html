@@ -26,7 +26,6 @@
             box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
             width: 300px;
             text-align: center;
-            
         }
         .title-container {
             display: flex;
@@ -63,13 +62,19 @@
             background-color: #007BFF;
             color: white;
             border: none;
-            border-radius:100px;
+            border-radius: 100px;
             cursor: pointer;
             margin-top: 10px;
             margin-bottom: -10px;
+            transition: background 0.3s;
         }
         .btn:hover {
             background-color: #0056b3;
+        }
+        #pesanTambahan {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -83,10 +88,10 @@
         <form id="loginForm">
             <div class="input-group">
                 <input type="text" id="Username" name="Username" placeholder="Username" required>
-             </div>
+            </div>
             <div class="input-group">
                 <input type="password" id="Password" name="Password" placeholder="Password" required>
-             </div>
+            </div>
             <button type="submit" class="btn">Login</button>
             <p id="pesanTambahan"></p>
         </form>
@@ -99,7 +104,10 @@
             var password = document.getElementById("Password").value;
             
             if (username === "admin" && password === "1234") {
-                document.getElementById("pesanTambahan").innerText = "Login Berhasil";
+                document.getElementById("pesanTambahan").innerText = "Login Berhasil, mengalihkan...";
+                setTimeout(() => {
+                    window.location.href = "dashboard.html"; // Redirect ke halaman berikutnya
+                }, 1000);
             } else {
                 document.getElementById("pesanTambahan").innerText = "Username atau Password salah";
             }
