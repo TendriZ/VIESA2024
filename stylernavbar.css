@@ -15,12 +15,13 @@ body {
     scroll-behavior: smooth;
     overflow-y: auto;
     margin: auto;
+    width: 100%;
 }
 
 /* Styling Navbar */
 .navbar {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     background: rgb(48, 48, 251);
     padding: 10px 0;
     z-index: 100;
@@ -138,12 +139,12 @@ p {
 .momen-seru {
     background: rgba(251, 129, 48, 0.7);
     padding: 0px;
-    width: 350px;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 50%;
+    margin-top: 100vh;
     align-self: flex-start;
 }
 
