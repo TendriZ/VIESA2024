@@ -1,7 +1,2 @@
 # VIESA2024
-kalau tampilannya gini, sabar ya, masih ngerender (tapi kok lama y anj) 
-p
-p
-p 
-h99
-apalah
+THIS IS LITTLE PROJECT BEING WORKED ON BY 3 PEOPLE, MAYBE MORE (if you want)
