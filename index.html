@@ -33,9 +33,9 @@
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault();
             var username = document.getElementById("Username").value;
-            var password = document.getElementById("Password").value;
+            var password = document.getElementById("Password").value;   
             
-            if (username === "admin" && password === "1234") {
+            if (username === "viesa24" && password === "paketoganteng123") {
                 document.getElementById("pesanTambahan").innerText = "Login Berhasil, mengalihkan...";
                 setTimeout(() => {
                     window.location.href = "dashboard.html"; // Redirect ke halaman berikutnya
