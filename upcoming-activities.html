@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upcoming Activities</title>
+
+    <link rel="stylesheet" href="stylernavbar.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <button class="btn" onclick="Home()">Home</button>
+            <button class="btn" onclick="About()">About</button>
+            <button class="btn" onclick="Settings()">Settings</button>
+            <button class="btn" onclick="logout()">Logout</button>
+            <div class="dropdown">
+                <button class="btn dropdown-btn" onclick="toggleDropdown(event)">☰</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button class="btn" onclick="UpcomingActivities()">Upcoming Activities</button>
+                    <button class="btn" onclick="Student()">List of Students</button>
+                    <button class="btn" onclick="InfoNongki()">Info Nongki</button>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <!-- Dashboard -->
+    <div class="dashboard-container">
+        <h1>Kegiatan mendatang</h1>
+        <p>Berisi Kegiatan ke depannya kalau untuk sekarang, nantinya bakal ada makrab angkatan</p>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "index.html"; // Kembali ke halaman login
+        }
+    
+        function About() {
+            window.location.href = "profile.html"; // Kembali ke halaman profile
+        }
+    
+        function Settings() {
+            window.location.href = "settings.html"; // Kembali ke halaman settings
+        }
+    
+        function Home() {
+            window.location.href = "dashboard.html"; // Kembali ke halaman ini sendiri
+        }
+        function UpcomingActivities() {
+            window.location.href = "upcoming-activities.html"; // Ganti dengan halaman kegiatan mendatang
+        }
+
+        function Student() {
+            window.location.href = "list-of-students.html"; // Ganti dengan halaman daftar mahasiswa
+        }
+
+        function InfoNongki() {
+            window.location.href = "info-nongki.html"; // Ganti dengan halaman info nongkrong
+        }
+
+    
+        function toggleDropdown(event) {
+        event.stopPropagation(); // Mencegah klik di luar langsung menutup dropdown
+        let dropdown = document.getElementById("dropdownMenu");
+        console.log("Dropdown diklik!"); // Debugging
+        if (dropdown.style.display ==="none" || dropdown.style.display === "") {
+            dropdown.style.display = "block";
+            console.log("Dropdown dibuka");
+        } else {
+            dropdown.style.display = "none";
+            console.log("Dropdown ditutup");
+        }
+        }
+
+        // Menutup dropdown saat klik di luar
+        document.addEventListener("click", function (event) {
+        let dropdown = document.getElementById("dropdownMenu");
+        let menuButton = document.querySelector(".dropdown-btn");
+
+        if (dropdown && menuButton && !menuButton.contains(event.target) && !dropdown.contains(event.target)) {
+            dropdown.style.display = "none";
+            console.log("Klik di luar, dropdown ditutup");
+        }
+        });
+    </script>
+</body>
+</html>

@@ -15,21 +15,19 @@ body {
     scroll-behavior: smooth;
     overflow-y: auto;
     margin: auto;
-    
 }
 
 /* Styling Navbar */
 .navbar {
-    position:absolute ;
+    position: absolute;
     width: 100%;
     background: rgb(48, 48, 251);
     padding: 10px 0;
-    z-index: 12;
+    z-index: 100;
     align-items: center;
     justify-content: center;
     top: 0;
     height: 10%;
-
 }
 
 .navbar ul {
@@ -42,7 +40,7 @@ body {
 }
 
 .navbar ul button {
-    margin-right: 10%; /* Jarak antar menu */
+    margin-right: 5%;
     text-decoration: none;
     font-size: 20px;
     padding: 8px 8px;
@@ -53,24 +51,56 @@ body {
     margin-top: 15px;
     background-color: rgb(48, 48, 251);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .navbar ul button:hover {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 20px;
     color: black;
     cursor: pointer;
-
 }
 
+/* Styling Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #444;
+    min-width: 120px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: none;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dashboard */
 .container {
     display: flex;
-    flex-direction: column; /* Elemen tersusun ke bawah */
-    align-items: center; /* Agar "Selamat Datang di VIESA" tetap di tengah */
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
-/* Dashboard */
+
 .dashboard-container {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -97,10 +127,11 @@ p {
     margin-top: 1px;
 }
 
+/* Momen Seru */
 .momen-wrapper {
     display: flex;
-    justify-content: left; /* Supaya isi di dalamnya ke kiri */
-    width: 100%; /* Pastikan selebar layar */
+    justify-content: left;
+    width: 100%;
     margin-top: 600%;
 }
 
@@ -112,8 +143,8 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 50%; /* Jarak normal dari dashboard */
-    align-self: flex-start; /* Ini yang bikin dia ke kiri */
+    margin-top: 50%;
+    align-self: flex-start;
 }
 
 .momen-seru h2 {
