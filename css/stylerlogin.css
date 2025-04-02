@@ -12,6 +12,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    margin: auto;
+    width: 100%;
 }
 .login-container {
     background: linear-gradient(to bottom, #0056b3 0%, #003366 31%, #aad4e6 34%);  

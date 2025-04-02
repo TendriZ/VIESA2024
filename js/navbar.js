@@ -25,6 +25,11 @@ function InfoNongki() {
     window.location.href = "info-nongki.html"; // Ganti dengan halaman info nongkrong
 }
 
+function Momen() {
+    window.location.href = "momen.html"; // Ganti dengan halaman momen
+}
+
+
 function toggleDropdown(event) {
 event.stopPropagation(); // Mencegah klik di luar langsung menutup dropdown
 let dropdown = document.getElementById("dropdownMenu");

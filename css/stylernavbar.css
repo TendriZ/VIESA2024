@@ -16,7 +16,7 @@ body {
     overflow-y: auto;
     margin: auto;
     width: 100%;
-}
+}   
 
 /* Styling Navbar */
 .navbar {
@@ -60,6 +60,7 @@ body {
     border-radius: 20px;
     color: black;
     cursor: pointer;
+    transition: 0.7s;
 }
 
 /* Styling Dropdown */
@@ -73,9 +74,9 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #444;
+    background-color: #1a53e4;
     min-width: 120px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,10 +89,14 @@ body {
     text-align: left;
     border: none;
     cursor: pointer;
+    border-radius: 0px;
 }
 
 .dropdown-menu .btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 0px;
+
 }
 
 /* Dashboard */
@@ -115,6 +120,9 @@ body {
     align-items: center;
     position: absolute;
     top: 0;
+    width: 150vh;
+    height: 25vh;
+    margin-top: 13.1vh;
 }
 
 h1 {
@@ -128,16 +136,16 @@ p {
     margin-top: 1px;
 }
 
-/* Momen Seru */
 .momen-wrapper {
     display: flex;
     justify-content: left;
     width: 100%;
-    margin-top: 600%;
+    margin-top: 700%;
+    margin-bottom: 100%;
 }
 
-.momen-seru {
-    background: rgba(251, 129, 48, 0.7);
+.momen-seru:first-child {
+    background: rgb(34, 46, 224, 0.8);
     padding: 0px;
     width: 30vw;
     display: flex;
@@ -147,6 +155,35 @@ p {
     margin-top: 100vh;
     align-self: flex-start;
 }
+
+.momen-seru:nth-child(2) {
+    background: rgba(80, 208, 55, 0.8);
+    padding: 0px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100vh;
+    align-self: flex-start;
+    margin-left: 5vw;
+
+}
+
+.momen-seru:nth-child(3) {
+    background: rgba(155, 193, 50, 0.8);
+    padding: 0px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100vh;
+    align-self: flex-start;
+    margin-left: 5vw;
+
+}
+
 
 .momen-seru h2 {
     color: #000291d0;
