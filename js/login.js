@@ -7,6 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         document.getElementById("pesanTambahan").innerText = "Login Berhasil, mengalihkan...";
         setTimeout(() => {
             window.location.href = "dashboard.html"; // Redirect ke halaman berikutnya
+
         }, 1000);
     } else {
         document.getElementById("pesanTambahan").innerText = "Username atau Password salah";

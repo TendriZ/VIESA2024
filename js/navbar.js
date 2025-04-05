@@ -4,6 +4,7 @@ function logout() {
 
 function About() {
     window.location.href = "profile.html"; // Kembali ke halaman profile
+
 }
 
 function Settings() {
@@ -32,15 +33,12 @@ function Momen() {
 
 function toggleDropdown(event) {
 event.stopPropagation(); // Mencegah klik di luar langsung menutup dropdown
-let dropdown = document.getElementById("dropdownMenu");
-console.log("Dropdown diklik!"); // Debugging
-if (dropdown.style.display ==="none" || dropdown.style.display === "") {
-    dropdown.style.display = "block";
-    console.log("Dropdown dibuka");
-} else {
-    dropdown.style.display = "none";
-    console.log("Dropdown ditutup");
-}
+let dropdown = document.getElementById("dropdownMenu"); 
+if (dropdown.style.display ==="none" || dropdown.style.display === "") 
+    {dropdown.style.display = "block";} 
+else 
+{dropdown.style.display = "none";}
+
 }
 
 // Menutup dropdown saat klik di luar
@@ -48,8 +46,7 @@ document.addEventListener("click", function (event) {
 let dropdown = document.getElementById("dropdownMenu");
 let menuButton = document.querySelector(".dropdown-btn");
 
-if (dropdown && menuButton && !menuButton.contains(event.target) && !dropdown.contains(event.target)) {
-    dropdown.style.display = "none";
-    console.log("Klik di luar, dropdown ditutup");
-}
+if (dropdown && menuButton && !menuButton.contains(event.target) && !dropdown.contains(event.target)) 
+    {dropdown.style.display = "none";}
+
 });
