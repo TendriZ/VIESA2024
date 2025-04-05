@@ -82,3 +82,26 @@ body {
     margin-top: 15px;
     margin-bottom: -5px;
 }
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    .title-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .input-group input, .btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
