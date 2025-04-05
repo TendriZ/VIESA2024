@@ -8,7 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         setTimeout(() => {
             window.location.href = "dashboard.html"; // Redirect ke halaman berikutnya
 
-        }, 1000);
+        }, 10);
     } else {
         document.getElementById("pesanTambahan").innerText = "Username atau Password salah";
         setTimeout(() => {

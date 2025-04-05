@@ -12,7 +12,7 @@ function Settings() {
 }
 
 function Home() {
-    window.location.href = "dashboard.html"; // Kembali ke halaman ini sendiri
+    window.location.href = "dashboard.html"; // Kembali ke halaman Home
 }
 function UpcomingActivities() {
     window.location.href = "upcoming-activities.html"; // Ganti dengan halaman kegiatan mendatang
