@@ -203,10 +203,11 @@ p {
     .navbar {
         height: auto;
         padding: 10px 0;
+        
     }
 
     .navbar ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-left: 0;
     }
